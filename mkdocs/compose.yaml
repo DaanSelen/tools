@@ -1,0 +1,11 @@
+services:
+  mkdocs:
+    container_name: mkdocs
+    image: mkdocs:latest
+    restart: always
+    ports:
+      - "8080:8000"
+    volumes:
+      - docs:/docs
+volumes:
+  docs:
